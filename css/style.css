@@ -4,3 +4,23 @@
     box-sizing: border-box;
     font-family: 'Roboto', sans-serif;
 }
+
+header{
+    height: 50px ;
+}
+
+header img{
+    width: 100%;
+}
+
+#mobile-logo{
+    max-width: 90px;
+}
+
+#bell{
+    color: orange;
+}
+
+.form-control{
+  background-color: lightgray!important;
+}
