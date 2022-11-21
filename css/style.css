@@ -101,6 +101,15 @@ ul{
     background-color: #f8f9fa;
 }
 
+.table img{
+    width: 30px;
+}
+
+.border-ic{
+    border: 2px solid gray !important;
+
+}
+
 @media screen and (min-width:992px) {
     .aside{
         width: 150px;
