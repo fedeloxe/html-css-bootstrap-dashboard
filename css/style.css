@@ -110,6 +110,18 @@ ul{
 
 }
 
+.table .col50{
+    width: 50%;
+}
+
+.table .col15{
+    width: 15%;
+}
+
+.table .col10{
+    width: 10%;
+}
+
 @media screen and (min-width:992px) {
     .aside{
         width: 150px;
