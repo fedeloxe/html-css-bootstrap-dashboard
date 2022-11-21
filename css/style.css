@@ -33,6 +33,12 @@ header .form-control{
    
 }
 
+.aside .row{
+    height: 100%;
+}
+
+
+
 .aside{
     background-color: #051e34;
     height: 100%;
@@ -67,6 +73,28 @@ header .form-control{
     color: white;
     padding: 5px 10px;
     font-size: small;
+
+}
+
+.hover:hover{
+    background-color: grey;
+    cursor: pointer;
+
+}
+
+.button-runded:hover{
+    color: white !important;
+    
+}
+
+.pointer:hover{
+    cursor: pointer;
+    filter: invert(1);
+}
+
+ul{
+    list-style-type: none;
+    padding-left: 0px !important;
 }
 
 @media screen and (min-width:992px) {
