@@ -36,18 +36,14 @@
                     <div>
                         <i data-bs-toggle="dropdown" role="button" id="dropdownmenubell"  class="fa-solid fa-bell" ></i>
                         <ul aria-labelledby="#dropdpwnmenubell" class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            <li><a class="dropdown-item" href="#">Profilo</a></li>
+                            <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                            <li><a class="dropdown-item " href="#">Logout</a></li>
                           </ul>
-
                     </div>
                 </div>
-
             </div>
         </div>
-
     </header>
 
     <main>
@@ -56,11 +52,91 @@
 
             </div>
             <div class="main">
-                <div class="container-fluid text-white top-bar p-4">
+                <div class="container-fluid text-white top-bar p-4">   <!--TOPBAR-->
                     <div class="row gy-3">
-                        <div class="col-12 col-sm4 col-lg-2 order-2 order-sm-0">col</div>
-                        <div class="col-12 col-sm4 col-lg-2 order-3 order-sm-0">col</div>
-                        <div class="col-12 col-sm4 col-lg-2 order-1 order-sm-0">col</div>
+                        <div class="col-12 col-sm-4 col-lg-6 order-1 order-sm-1">   <!--col1-->
+                            <div class="d-flex flex-wrap align-items-center">
+                                <h2 class="d-inline-flex me-2">Boolean</h2>
+                                <a href="" class="button-runded">Piano blaze</a>
+                            </div>
+                            <div class="d-flex flex-wrap align-items-center">
+                                <a href="" class="button-runded me-1 mt-1">3 app</a>
+                                <span class="me-1 mt-1"><i class="fa-solid fa-greater-than"></i><i class="fa-solid fa-greater-than"></i></span>
+                                <a href="" class="button-runded me-1 mt-1 d-none  d-lg-block">Boolean mobile app</a>
+                                <a href="" class="button-runded me-1 mt-1 d-none  d-lg-block">Boolean web app</a>
+                                <a href="" class="button-runded me-1 mt-1 d-none  d-lg-block">Boolean blog app</a>
+                                <a href="" class="button-runded me-1 mt-1 d-lg-none"><i class="fa-sharp fa-solid fa-plus"></i> </a>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-4 col-lg-4 order-1 order-sm-2">    <!--col2-->
+                            <span>Studenti online negli ultimi 30 minuti</span>
+                            <h2>125</h2>
+                        </div> 
+                        <div class="col-12 col-sm-4 col-lg-2 order-0 order-sm-3  mt-lg-4">    <!--col3-->
+                            <span class="me-3">Nuovo studente</span>
+                            <i class="fa-solid fa-plus border p-2 fs-5 rounded" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"></i>
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h2 class="offcanvas-title" id="offcanvasRightLabel">Inserisci nuovo studente</h2>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <form class="row g-3">
+                                    <div class="col-md-6">
+                                        <label for="" class="form-label">Nome</label>
+                                        <input type="text" class="form-control" placeholder="" aria-label="First name">
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="" class="form-label">cognome</label>
+                                        <input type="text" class="form-control" placeholder="" aria-label="Last name">
+                                      </div>
+                                      <div class="col-md-6">
+                                        <label for="inputEmail4" class="form-label">Email</label>
+                                        <div class="input-group flex-nowrap">
+                                            <span class="input-group-text" id="addon-wrapping">@</span>
+                                            <input type="email" class="form-control" placeholder="" aria-label="email" aria-describedby="addon-wrapping">
+                                          </div>
+                                      </div>
+                                    <div class="col-md-6">
+                                      <label for="inputPassword4" class="form-label">Password</label>
+                                      <input type="password" class="form-control" id="inputPassword4">
+                                    </div>
+                                    <div class="col-12">
+                                      <label for="inputAddress" class="form-label">Indirizzo</label>
+                                      <input type="text" class="form-control" id="inputAddress" placeholder="">
+                                    </div>
+                                    <div class="col-md-6">
+                                      <label for="inputCity" class="form-label">Citt&#224;</label>
+                                      <input type="text" class="form-control" id="inputCity">
+                                    </div>
+                                    <div class="col-md-4">
+                                      <label for="inputState" class="form-label">Stato</label>
+                                      <select id="inputState" class="form-select">
+                                        <option selected>Scegli...</option>
+                                        <option>...</option>
+                                      </select>
+                                    </div>
+                                    <div class="col-md-2">
+                                      <label for="inputZip" class="form-label">CAP</label>
+                                      <input type="text" class="form-control" id="inputZip">
+                                    </div>
+                                    <div class="col-12">
+                                      <div class="form-check">
+                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                        <label class="form-check-label" for="gridCheck">
+                                          Seleziona per proseguire
+                                        </label>
+                                      </div>
+                                    </div>
+                                    <div class="col-12">
+                                      <button type="submit" class="btn btn-primary">Salva</button>
+                                      <button type="button" class="btn btn-warning">Svuota</button>
+                                    </div>
+                                  </form>
+                            </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -77,3 +153,8 @@
     
 </body>
 </html>
+
+<div class="col-12">
+    <h2>Inserisci nuovo studente</h2>
+</div>
+
