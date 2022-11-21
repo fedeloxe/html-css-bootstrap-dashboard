@@ -14,26 +14,35 @@
     <title>Dashboard</title>
 </head>
 <body>
-    <header>
-        <div class="container-fluid mt-2">
-            <div class="row d-flex align-items-center">
-                <div class="col-2">
+    <header class="pt-2 ps-2 fixed-top">
+        <div class="container-fluid">
+            <div class="row d-flex align-items-center justify-content-between">
+                <div class="col-2 p-0">
                     <img src="./img/logo.svg" alt="logo" class="d-none  d-lg-block">
                     <img src="./img/mobile-logo.png" alt="mobile-logo" class="d-lg-none" id="mobile-logo">
                 </div>
+
                 <div class="col-8">
-                    <div class="">
-                        <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="&#x1F50E;&#xFE0e; Prova a cercare: Lezioni di Laravel ">
+                    <div class="input-group">
+                        <span class="input-group-text border-end-0" id="inputGroup-sizing-default"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        <input type="text" class="form-control border-start-0" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" id="exampleFormControlInput1" placeholder=" Prova a cercare: Lezioni di Laravel ">
                       </div>
                 </div>
+                
+                <div class="col-2 d-flex align-items-center justify-content-evenly">
+                        <i class="fa-solid fa-list-ul me-3 d-none  d-lg-block"></i>
+                        <i class="fa-solid fa-circle-question me-3 d-none  d-lg-block"></i>
+                        <i class="fa-solid fa-ellipsis-vertical me-3 d-none  d-lg-block"></i>
+                    <div>
+                        <i data-bs-toggle="dropdown" role="button" id="dropdownmenubell"  class="fa-solid fa-bell" ></i>
+                        <ul aria-labelledby="#dropdpwnmenubell" class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                          </ul>
 
-                <div class="col-2 d-flex align-items-center">
-                    <div class="d-none  d-lg-block">
-                        <i class="fa-solid fa-list-ul me-3"></i>
-                        <i class="fa-solid fa-circle-question me-3"></i>
-                        <i class="fa-solid fa-ellipsis-vertical me-3"></i>
                     </div>
-                    <i class="fa-solid fa-bell" id="bell"></i>
                 </div>
 
             </div>
@@ -42,6 +51,21 @@
     </header>
 
     <main>
+        <div class="wrapper d-flex">
+            <div class="aside">
+
+            </div>
+            <div class="main">
+                <div class="container-fluid text-white top-bar p-4">
+                    <div class="row gy-3">
+                        <div class="col-12 col-sm4 col-lg-2 order-2 order-sm-0">col</div>
+                        <div class="col-12 col-sm4 col-lg-2 order-3 order-sm-0">col</div>
+                        <div class="col-12 col-sm4 col-lg-2 order-1 order-sm-0">col</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
 
     </main>
 
